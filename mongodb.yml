@@ -1,6 +1,6 @@
 - name: MangoDB Setup
   hosts: all
-  become: yes
+  become: true
   tasks:
     - name: Copy MongoDB Yum repo file
       ansible.builtin.copy:

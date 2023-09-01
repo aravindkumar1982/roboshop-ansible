@@ -1,6 +1,6 @@
 - name: Catalogue Setup
   hosts: all
-  become: yes
+  become: true
   vars:
     component: catalogue
   tasks:
