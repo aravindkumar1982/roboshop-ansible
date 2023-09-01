@@ -5,6 +5,6 @@
 
 - name: Start {{Component}} Service
   ansible.builtin.systemd:
-    name: {{component}}
+    name: "{{component}}"
     state: started
     daemon_reload: yes
