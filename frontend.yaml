@@ -27,7 +27,7 @@
 #In Ansible we can download and extract content
 
     - name: Download and extract application content
-      ansible.builtin.Unarchive:
+      ansible.builtin.unarchive:
         src: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
         dest: /usr/share/nginx/html
         remote_src: yes
