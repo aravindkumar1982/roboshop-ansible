@@ -3,6 +3,6 @@
   become: yes
   vars:
     component: user
-    tasks:
+  tasks:
       - name: NodeJS Setup
         ansible.builtin.import_tasks: nodejs.yml
