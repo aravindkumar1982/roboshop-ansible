@@ -8,7 +8,7 @@
     - name: Install RabbitMQ Repos
       ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | bash
 
-    - name: Install RabitMQ
+    - name: Install RabbitMQ
       ansible.builtin.yum:
         name: rabbitmq-systemd
         state: restarted
