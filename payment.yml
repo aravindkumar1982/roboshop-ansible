@@ -1,0 +1,8 @@
+- name: Payment Setting
+  hosts: all
+  become: yes
+  vars:
+    component: payment
+  tasks:
+    - name:  Setup Python
+      ansible.builtin.import_tasks: python.yml
