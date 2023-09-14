@@ -16,3 +16,6 @@
   tasks:
     - name:  Setup golang
       ansible.builtin.import_tasks: golang.yml
+
+- name: Validate Dispatch details
+  ansible.builtin.shell: tail -f /var/log/messages
